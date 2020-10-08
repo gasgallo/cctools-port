@@ -169,7 +169,7 @@ rm -rf tmp
 
 mkdir -p tmp
 pushd tmp &>/dev/null
-git_clone_repository https://github.com/tpoechtrager/ldid.git master
+git_clone_repository https://github.com/tpoechtrager/ldid.git f83af8eff0bbd79972fe61a11453b0f9c8deba00
 pushd ldid &>/dev/null
 make INSTALLPREFIX=$TARGETDIR -j$JOBS install
 popd &>/dev/null
